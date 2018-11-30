@@ -15,7 +15,12 @@ It automatically resolves dependencies between installed components and removes 
 
 The uninstaller can be used programmatically as .NET library, through a command line interface and as custom action for a WiX setup package. 
 
-The included custom action for WiX is based on the .NET Framework 3.0 which is already shipped with Windows Vista or higher. 
+The included custom action for WiX is based on the .NET Framework 3.0 which is already shipped with Windows Vista or higher.
+
+The uninstaller will return a variety of error codes:
+ - 0 : Success
+ - 1 : Application not found
+ - 2 : Unexpected error
 
 ### How?
 
